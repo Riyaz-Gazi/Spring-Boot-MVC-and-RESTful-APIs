@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
-import java.util.NoSuchElementException;
 import java.util.Optional;
 
 @RestController
@@ -67,7 +66,5 @@ public class EmployeeController {
         if (employeeDTO == null) ResponseEntity.notFound().build();
         return ResponseEntity.ok(employeeDTO);
     }
-
-
 
 }
